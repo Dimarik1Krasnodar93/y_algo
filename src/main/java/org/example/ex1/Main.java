@@ -37,7 +37,9 @@ public class Main {
         return result;
     }
 
+
     private static int [] getDistances(List<Integer> houses) {
+        long startTime = System.currentTimeMillis();
         int size = houses.size();
         int [] distances = new int[houses.size()];
         if (houses.size() == 0) {
@@ -66,6 +68,8 @@ public class Main {
         if (distances[size - 1] != 0 && size > 1) {
             distances[size - 1] = distances[size - 2] + 1;
         }
+        long endTime = System.currentTimeMillis();
+        System.out.println("Time: " + (endTime - startTime));
         return distances;
     }
 }
