@@ -1,4 +1,4 @@
-package org.example.ex1;
+package org.example.sprint_1.ex1;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -21,7 +21,7 @@ public class Main {
 
     private static List<List<Integer>> getHouses() {
         List<List<Integer>> result = new ArrayList<>();
-        String fileName = "src\\main\\java\\org\\example\\ex1\\input.txt";
+        String fileName = "src\\main\\java\\org\\example\\sprint_1\\ex1\\input.txt";
         String line;
         try(BufferedReader bfr = new BufferedReader(new FileReader(fileName))) {
             while ((line = bfr.readLine()) != null) {
